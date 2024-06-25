@@ -11,6 +11,7 @@ import '@mantine/carousel/styles.css';
 import '@mantine/dates/styles.css';
 
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import Navbar from "@/components/navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Carent",
@@ -29,7 +30,10 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body className={inter.className}>
-      <MantineProvider>{children}</MantineProvider>
+      <MantineProvider>
+        <Navbar />
+        {children}
+        </MantineProvider>
       </body>
     </html>
   );

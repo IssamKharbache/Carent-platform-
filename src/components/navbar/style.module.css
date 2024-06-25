@@ -1,0 +1,9 @@
+.header{
+    height: rem(60px);
+       padding-left: 16px;
+       padding-right: 16px;
+       position: sticky;
+       top: -2px;
+       z-index: 10;
+       background-color: light-dark(#ece7e7,var(--mantine-color-dark-8));
+}
